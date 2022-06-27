@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AnalizadorSintactico</string>
+    <string name="texto_EditText_Derivada">Ingrese la derivada</string>
+    <string name="texto_btn_analizar">Analizar</string>
+</resources>
