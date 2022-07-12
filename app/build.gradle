@@ -1,8 +1,10 @@
-    plugins {
+plugins {
     id 'com.android.application'
     id 'kotlin-android'
-}
+    id 'org.jetbrains.kotlin.android'
+    id 'com.chaquo.python'
 
+}
 android {
     compileSdkVersion 31
     buildToolsVersion "31.0.0"
@@ -15,6 +17,14 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        ndk {
+            abiFilters "armeabi-v7a", "x86"
+        }
+        python {
+            pip {
+                install "matplotlib"
+            }
+        }
     }
 
     buildTypes {

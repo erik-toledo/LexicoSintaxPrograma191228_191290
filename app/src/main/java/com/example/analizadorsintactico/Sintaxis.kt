@@ -28,10 +28,7 @@ class Sintaxis {
         var i = 0
         val tipoDerivada = pila.firstElement()
         val canNew = cadena.split("\\s+".toPattern()).toMutableList()
-        if (canNew[canNew.indexOf("=") + 1] != "+" && canNew[canNew.indexOf("=") + 1] != "-") {
-            canNew.add(canNew.indexOf("=") + 1, "+")
-            canNew.add("!")
-        }else canNew.add("!")
+        canNew.add("!")
 
         do {
             if (simbolosFinales.contains(pila.firstElement())) {
